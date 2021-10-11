@@ -5,6 +5,10 @@ let comments = [];
 let video_time = 0.0;
 let interval = null;
 
+{
+	/* <img id="img" class="style-scope yt-img-shadow" alt="Verus" height="40" width="40" src="https://yt3.ggpht.com/ytc/AKedOLRfYUzpEN0wgX9DQU-f_uhDLfi1dpyEs141_Gyk=s48-c-k-c0x00ffffff-no-rj"></img> */
+}
+
 document.addEventListener("keyup", (event) => {
 	if (event.key === "a") clearInterval(interval);
 });
@@ -22,12 +26,20 @@ const displayComment = (author, comment) => {
 		.getBoundingClientRect();
 
 	let commentCard = document.createElement("div");
+	// let img = document.createElement("img");
+	// img.src =
+	// 	"https://yt3.ggpht.com/ytc/AKedOLRfYUzpEN0wgX9DQU-f_uhDLfi1dpyEs141_Gyk=s48-c-k-c0x00ffffff-no-rj";
+	// img.width = 40;
+	// img.height = 40;
+	// // img.classList.add("style-scope yt-img-shadow");
+	// commentCard.appendChild(img);
+
 	commentCard.classList.add("popup");
 	commentCard.style.left = `${center.x}px`;
 	commentCard.style.top = `${center.y}px`;
 	commentCard.innerText = author + comment;
 
-	document.querySelector("body").appendChild(commentCard);
+	document.querySelector("body").append(commentCard);
 
 	// commentCard.style.left = `${bar.x}px`;
 	// commentCard.style.top = `${bar.y - 25}px`;
