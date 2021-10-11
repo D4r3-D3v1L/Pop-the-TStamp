@@ -67,8 +67,8 @@ function filter_comments(comments) {
 chrome.tabs.onUpdated.addListener((id, changeinfo, tab) => {
 	if (changeinfo.status === "complete") {
 		if (/^https:\/\/www\.youtube\.com\/watch*/.test(tab.url)) {
-			chrome.tabs.executeScript(id, { file: "./foreground.js" });
 			chrome.tabs.insertCSS(id, { file: "./style.css" });
+			chrome.tabs.executeScript(id, { file: "./foreground.js" });
 		}
 	}
 });

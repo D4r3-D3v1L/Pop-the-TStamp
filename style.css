@@ -1,0 +1,25 @@
+.popup {
+	width: 200px;
+	padding: 5px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: fit-content;
+	background-color: rgb(204, 75, 15);
+	font-size: 1em;
+	color: #ffffff;
+	opacity: 0.01;
+	border: 2px solid #2b2a2a;
+	border-radius: 2px;
+	box-shadow: 5px 5px 20px #2b2a2a;
+	transform: translate(-50%, -50%);
+}
+
+.test {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	font-size: large;
+	color: aqua;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
