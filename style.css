@@ -5,9 +5,11 @@
 	left: 0;
 	top: 0;
 	height: fit-content;
-	background-color: rgb(204, 75, 15);
+	background-color: rgb(74, 192, 38);
 	font-size: 1em;
-	color: #ffffff;
+	color: #a0c2cf;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
 	opacity: 0.01;
 	border: 2px solid #2b2a2a;
 	border-radius: 2px;
