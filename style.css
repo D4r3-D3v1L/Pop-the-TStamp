@@ -1,7 +1,7 @@
 .popup {
-	width: 200px;
+	width: fit-content;
 	padding: 5px;
-	position: absolute;
+	position: relative;
 	left: 0;
 	top: 0;
 	height: fit-content;

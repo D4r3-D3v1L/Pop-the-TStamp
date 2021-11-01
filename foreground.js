@@ -34,10 +34,11 @@ const displayComment = (author, comment) => {
 	// // img.classList.add("style-scope yt-img-shadow");
 	// commentCard.appendChild(img);
 
+	commentCard.innerText = author;
 	commentCard.classList.add("popup");
 	commentCard.style.left = `${center.x}px`;
 	commentCard.style.top = `${center.y}px`;
-	commentCard.innerText = author + comment;
+	console.log(commentCard.innerText);
 
 	document.querySelector("body").append(commentCard);
 
@@ -86,8 +87,8 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 			// console.log(video_time);
 			comments.forEach((comment) => {
 				if (comment.time_stamp == video_time) {
-					console.log(comment);
-					displayComment(comment.author, comment.comment);
+					console.log(comment.comment);
+					displayComment(comment.author + ":" + comment.comment);
 				}
 			});
 		}, 1000);
